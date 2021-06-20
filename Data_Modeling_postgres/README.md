@@ -51,42 +51,30 @@ start_time, hour, day, week, month, year, weekday
 
 ## Project Files
 
-```sql_queries.py``` -> contains sql queries for dropping and  creating fact and dimension tables. Also, contains insertion query template.
+```SQL_QUIRES.py``` -> contains sql queries for dropping and  creating fact and dimension tables. Also, contains insertion query template.
 
 ```create_tables.py``` -> contains code for setting up database. Running this file creates **sparkifydb** and also creates the fact and dimension tables.
 
-```etl.ipynb``` -> a jupyter notebook to analyse dataset before loading. 
+```ETL.ipynb``` -> a jupyter notebook to analyse dataset before loading. 
 
-```etl.py``` -> read and process **song_data** and **log_data**
+```ETL.py``` -> read and process **song_data** and **log_data**
 
 ```test.ipynb``` -> a notebook to connect to postgres db and validate the data loaded.
-
-## Environment 
-Python 3.6 or above
-
-PostgresSQL 9.5 or above
-
-psycopg2 - PostgreSQL database adapter for Python
 
 
 ## How to run
 
-Run the drive program ```main.py``` as below.
-```
-python main.py
-``` 
-
-The ```create_tables.py``` and ```etl.py``` file can also be run independently as below:
+First, run the ```create_tables.py``` then ```ETL.py``` file can also be run independently as below:
 ```
 python create_tables.py 
-python etl.py 
+python ETL.py 
 ```
 
-
+<!-- 
  #### Reference: 
 [Psycopg](http://initd.org/psycopg/docs/)
 
 [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
-[Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+[Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/) -->
 
